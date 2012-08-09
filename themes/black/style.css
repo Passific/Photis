@@ -1,0 +1,98 @@
+
+body {
+	margin:0px;
+	padding:0px;
+	background:#111 url(bg.png) no-repeat center center;
+	color:#CCC;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+/* General */
+
+a {
+	text-decoration:none;
+	color:#FFF;
+}
+
+/* Menu */
+
+#menu {
+	width:90%;
+	min-height:50px;
+	margin:20px auto;
+}
+
+#menu ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#menu ul li {
+	width:150px;
+	height:24px;
+	margin:10px 20px;
+	padding:5px;
+	float:left;
+	font-size:20px;
+	text-align:center;
+	background:url(menu.png) no-repeat;
+}
+
+#menu ul li:hover {
+	background:url(menuh.png) no-repeat;
+}
+
+#menu ul li a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#menu ul li#return {
+	width:30px;
+	margin-right:0px;
+	background:url(return.png) no-repeat;
+}
+
+/* Contenu de la page */
+
+#content {
+	width:95%;
+	margin:0px auto;
+}
+
+/* Affichage de la liste des images */
+
+#images {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+#images li {
+	margin:10px;
+	float:left;
+}
+
+#images li img {
+	padding:2px;
+	background:#111;
+	border:1px solid #333;
+}
+
+#images li #erreur {
+	padding:10px;
+	background:#333;
+	border:1px solid #CCC;
+	font-weight:bold;
+}
+
+/* Pied de page */
+
+#footer {
+	width:100%;
+	padding:5px 0px;
+	float:left;
+	text-align:center;
+}

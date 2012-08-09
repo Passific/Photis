@@ -1,0 +1,5 @@
+directoryIndex index.php
+
+RewriteEngine on
+
+RewriteRule ^galerie-(.*)				index.php?dir=galerie/$1 [nc]
