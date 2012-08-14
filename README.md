@@ -29,7 +29,7 @@ N'hésitez pas à venir visiter : http://github.com/Passific/Photis
 - Comment changer de thème pour ma galerie ?
 
 	Il vous suffira de changer dans le fichier config.php la ligne 13 :
-	$theme = "defaut"; peut être changé par $theme = "black";
+	```$theme = "defaut";``` peut être changé par ```$theme = "black";```
 	Il y a deux thèmes déjà incorporés mais vous pouvez créer le votre
 	ou encore en télécharger sur le git de photis :
 	http://github.com/Passific/Photis
