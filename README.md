@@ -1,4 +1,4 @@
-# Photis V 1.4.1
+# Photis V 1.5.0
 
 Nous vous remercions d'avoir choisi Photis pour votre galerie photo.
 
