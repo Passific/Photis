@@ -1,11 +1,14 @@
 <?php
 
-class Image {
-	public function ResizeImage($image, $newimage, $newwidth=0, $newheight=0) {
+class Image
+{
+	public function ResizeImage($image, $newimage, $newwidth=0, $newheight=0)
+	{
 		if (!function_exists('ImageTypes'))
 			return false;
 		list($width,$height,$type) = GetImageSize($image);
-		if ($im = self::ReadImageFromFile($image, $type)) {
+		if ($im = self::ReadImageFromFile($image, $type))
+		{
 			if ($newwidth==0)
 				$newwidth = ($newheight / $height) * $width;
 			else if ($newheight==0)
@@ -25,10 +28,13 @@ class Image {
 			if (function_exists('imagesavealpha'))
 				imagesavealpha ($im2 , true);
  
-			if (function_exists('ImageCopyResampled')) {
+			if (function_exists('ImageCopyResampled'))
+			{
 				$im2 = imagecreatetruecolor($newwidth, $newheight);
 				ImageCopyResampled($im2,$im,0,0,0,0,$newwidth,$newheight,$width,$height);
-			} else {
+			}
+			else
+			{
 				ImageCopyResized($im2,$im,0,0,0,0,$newwidth,$newheight,$width,$height);
 			}
  
@@ -37,9 +43,11 @@ class Image {
 		}
 		return false;
 	}
-	private function ReadImageFromFile($filename, $type) {
+	private function ReadImageFromFile($filename, $type)
+	{
 		$imagetypes = ImageTypes();
-		switch ($type) {
+		switch ($type)
+		{
 			case 1 :
 				if ($imagetypes & IMG_GIF)
 					return $im = ImageCreateFromGIF($filename);
@@ -56,8 +64,10 @@ class Image {
 				return 0;
 		}
 	}
-	private function WriteImageToFile($im, $filename, $type) {
-		switch ($type) {
+	private function WriteImageToFile($im, $filename, $type)
+	{
+		switch ($type)
+		{
 			case 1 :
 				return ImageGIF($im, $filename);
 			case 2 :

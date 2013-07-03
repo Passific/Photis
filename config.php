@@ -44,6 +44,12 @@ $amin = "1";
 // 150 par défaut
 $hmin = "175";
 
+/*** Foldericon ***/
+
+// Permet d'afficher une icone pour les dossier
+// 0 = pas d'icone pour les dossiers
+// 1 = icone pour les dossiers activé
+$option_folder = "0";
 
 /*** Options visuelles (Javascript) ***/
 
